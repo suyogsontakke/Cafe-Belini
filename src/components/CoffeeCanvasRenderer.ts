@@ -1,9 +1,9 @@
 /**
  * High-performance Canvas Renderer for HOMIE Coffee
- * Background seamlessly matches #00735C
+ * Background seamlessly matches #097454
  */
 
-export const BG_COLOR = '#00735C';
+export const BG_COLOR = '#097454';
 
 /**
  * Draw an image frame centered on canvas using object-contain math
@@ -14,7 +14,7 @@ export function drawContainImage(
   cw: number,
   ch: number
 ) {
-  // Clear with background color #00735C
+  // Clear with background color #097454
   ctx.fillStyle = BG_COLOR;
   ctx.fillRect(0, 0, cw, ch);
 

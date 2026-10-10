@@ -269,7 +269,7 @@ export const FullMenuSection: React.FC = () => {
   };
 
   return (
-    <section id="menu" className="relative py-28 px-4 sm:px-6 md:px-12 bg-[#00604d] text-white">
+    <section id="menu" className="relative py-28 px-4 sm:px-6 md:px-12 bg-[#08674b] text-white">
       {/* Decorative background glow */}
       <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent" />
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-white/5 via-transparent to-transparent" />
@@ -316,7 +316,7 @@ export const FullMenuSection: React.FC = () => {
               onClick={() => setActiveTab('all')}
               className={`px-4 py-2 rounded-full text-xs font-medium tracking-wide uppercase transition-all whitespace-nowrap cursor-pointer shrink-0 ${
                 activeTab === 'all'
-                  ? 'bg-white text-[#00735C] shadow-md font-semibold'
+                  ? 'bg-white text-[#097454] shadow-md font-semibold'
                   : 'bg-white/10 text-white/70 hover:bg-white/15 hover:text-white'
               }`}
             >
@@ -328,7 +328,7 @@ export const FullMenuSection: React.FC = () => {
                 onClick={() => setActiveTab(cat.id)}
                 className={`px-4 py-2 rounded-full text-xs font-medium tracking-wide uppercase transition-all whitespace-nowrap cursor-pointer shrink-0 flex items-center gap-1.5 ${
                   activeTab === cat.id
-                    ? 'bg-white text-[#00735C] shadow-md font-semibold'
+                    ? 'bg-white text-[#097454] shadow-md font-semibold'
                     : 'bg-white/10 text-white/70 hover:bg-white/15 hover:text-white'
                 }`}
               >
@@ -341,8 +341,8 @@ export const FullMenuSection: React.FC = () => {
 
         {/* Temporary Order Toast Notification */}
         {orderNotification && (
-          <div className="fixed bottom-24 right-6 z-50 p-4 rounded-2xl bg-white text-[#00735C] shadow-2xl border border-black/10 flex items-center gap-3 text-xs font-semibold animate-fade-in">
-            <div className="w-6 h-6 rounded-full bg-[#00735C] text-white flex items-center justify-center">
+          <div className="fixed bottom-24 right-6 z-50 p-4 rounded-2xl bg-white text-[#097454] shadow-2xl border border-black/10 flex items-center gap-3 text-xs font-semibold animate-fade-in">
+            <div className="w-6 h-6 rounded-full bg-[#097454] text-white flex items-center justify-center">
               <Check className="w-3.5 h-3.5" />
             </div>
             <span>{orderNotification}</span>

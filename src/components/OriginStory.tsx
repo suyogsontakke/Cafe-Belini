@@ -3,7 +3,7 @@ import { Compass, ThermometerSun, Mountain, HeartHandshake } from 'lucide-react'
 
 export const OriginStory: React.FC = () => {
   return (
-    <section id="origin" className="relative py-28 px-6 md:px-12 bg-[#00735C] text-white">
+    <section id="origin" className="relative py-28 px-6 md:px-12 bg-[#097454] text-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Lead */}
         <div className="max-w-3xl mb-20">
@@ -20,7 +20,7 @@ export const OriginStory: React.FC = () => {
 
         {/* 4 Pillars Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div className="p-8 rounded-2xl bg-[#005f4c] border border-white/10 flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-[#08664a] border border-white/10 flex flex-col justify-between">
             <div>
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#E4A254] mb-6">
                 <Mountain className="w-5 h-5" />
@@ -37,7 +37,7 @@ export const OriginStory: React.FC = () => {
             </div>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#005f4c] border border-white/10 flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-[#08664a] border border-white/10 flex flex-col justify-between">
             <div>
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#E4A254] mb-6">
                 <ThermometerSun className="w-5 h-5" />
@@ -54,7 +54,7 @@ export const OriginStory: React.FC = () => {
             </div>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#005f4c] border border-white/10 flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-[#08664a] border border-white/10 flex flex-col justify-between">
             <div>
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#E4A254] mb-6">
                 <Compass className="w-5 h-5" />
@@ -71,7 +71,7 @@ export const OriginStory: React.FC = () => {
             </div>
           </div>
 
-          <div className="p-8 rounded-2xl bg-[#005f4c] border border-white/10 flex flex-col justify-between">
+          <div className="p-8 rounded-2xl bg-[#08664a] border border-white/10 flex flex-col justify-between">
             <div>
               <div className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-[#E4A254] mb-6">
                 <HeartHandshake className="w-5 h-5" />
@@ -90,7 +90,7 @@ export const OriginStory: React.FC = () => {
         </div>
 
         {/* Sensory Flavor Map Quote */}
-        <div className="mt-16 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#004d3d] to-[#005a48] border border-white/15 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
+        <div className="mt-16 p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-[#054834] to-[#075c42] border border-white/15 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
           <div>
             <div className="text-xs uppercase tracking-widest text-[#E4A254] mb-2 font-mono">
               The Bellini Cupping Standard

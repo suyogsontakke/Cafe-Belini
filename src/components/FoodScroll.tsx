@@ -163,18 +163,18 @@ export const FoodScroll: React.FC<FoodScrollProps> = ({
     <section
       id="kitchen"
       ref={containerRef}
-      className="relative h-[480vh] w-full bg-[#00735C]"
+      className="relative h-[480vh] w-full bg-[#097454]"
     >
       {/* Sticky Viewport Container */}
-      <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#00735C] flex items-center justify-center">
+      <div className="sticky top-0 h-screen w-full overflow-hidden bg-[#097454] flex items-center justify-center">
         {/* The 60FPS HTML5 Canvas */}
         <canvas
           ref={canvasRef}
-          className="absolute inset-0 w-full h-full block bg-[#00735C]"
+          className="absolute inset-0 w-full h-full block bg-[#097454]"
         />
 
         {/* Subtle radial scrim for text legibility */}
-        <div className="absolute inset-0 pointer-events-none bg-radial from-transparent via-[#00735C]/20 to-[#00735C]/60" />
+        <div className="absolute inset-0 pointer-events-none bg-radial from-transparent via-[#097454]/20 to-[#097454]/60" />
 
         {/* Stage 1: MATCHA (0% - 28%) - Centered */}
         <div
@@ -291,7 +291,7 @@ export const FoodScroll: React.FC<FoodScrollProps> = ({
           <div className="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto">
             <button
               onClick={onExploreMenu}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 min-h-[44px] bg-white text-[#00735C] text-xs sm:text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-white/90 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3.5 min-h-[44px] bg-white text-[#097454] text-xs sm:text-sm font-semibold uppercase tracking-wider rounded-full hover:bg-white/90 active:scale-95 transition-all shadow-xl flex items-center justify-center gap-2 cursor-pointer"
             >
               <span>Explore Full Café Menu</span>
               <ChevronRight className="w-4 h-4" />

@@ -14,7 +14,7 @@ export const CommunitySection: React.FC = () => {
   };
 
   return (
-    <section id="community" className="relative py-28 px-6 md:px-12 bg-[#00735C] text-white">
+    <section id="community" className="relative py-28 px-6 md:px-12 bg-[#097454] text-white">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Column: Narrative */}
@@ -47,7 +47,7 @@ export const CommunitySection: React.FC = () => {
           </div>
 
           {/* Right Column: Weekly Drop Club Box */}
-          <div className="p-8 sm:p-12 rounded-3xl bg-[#005a48] border border-white/15">
+          <div className="p-8 sm:p-12 rounded-3xl bg-[#075c42] border border-white/15">
             <span className="text-xs font-mono uppercase tracking-widest text-[#E4A254] block mb-2">
               Private Release Allocations
             </span>
@@ -76,7 +76,7 @@ export const CommunitySection: React.FC = () => {
                   />
                   <button
                     type="submit"
-                    className="absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white text-[#00735C] hover:bg-white/90 transition-colors cursor-pointer"
+                    className="absolute right-1.5 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white text-[#097454] hover:bg-white/90 transition-colors cursor-pointer"
                     aria-label="Submit email"
                   >
                     <Mail className="w-4 h-4" />

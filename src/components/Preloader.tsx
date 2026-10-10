@@ -43,7 +43,7 @@ export const Preloader: React.FC<PreloaderProps> = ({
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } }}
-          className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#00735C] p-8 md:p-12 text-white selection:bg-transparent"
+          className="fixed inset-0 z-50 flex flex-col items-center justify-between bg-[#097454] p-8 md:p-12 text-white selection:bg-transparent"
         >
           {/* Header mark */}
           <div className="w-full flex items-center justify-between text-xs tracking-widest text-white/50 uppercase">

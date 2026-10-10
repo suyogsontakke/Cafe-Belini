@@ -23,8 +23,8 @@ export const Navbar: React.FC<NavbarProps> = ({
     <header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         isScrolled || isMobileMenuOpen
-          ? 'bg-[#00735C]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3 sm:py-3.5'
-          : 'bg-gradient-to-b from-black/25 via-[#00735C]/20 to-transparent py-4 sm:py-5'
+          ? 'bg-[#097454]/90 backdrop-blur-xl border-b border-white/10 shadow-lg py-3 sm:py-3.5'
+          : 'bg-gradient-to-b from-black/25 via-[#097454]/20 to-transparent py-4 sm:py-5'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 flex items-center justify-between gap-4 sm:gap-8">
@@ -90,7 +90,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           <a
             href="#community"
-            className="inline-flex items-center justify-center px-4 sm:px-5 py-2 min-h-[38px] text-xs font-semibold uppercase tracking-wider text-[#00735C] bg-white hover:bg-white/90 active:scale-95 rounded-full transition-all duration-200 shadow-md whitespace-nowrap shrink-0 cursor-pointer"
+            className="inline-flex items-center justify-center px-4 sm:px-5 py-2 min-h-[38px] text-xs font-semibold uppercase tracking-wider text-[#097454] bg-white hover:bg-white/90 active:scale-95 rounded-full transition-all duration-200 shadow-md whitespace-nowrap shrink-0 cursor-pointer"
           >
             <span>Join Reserve</span>
           </a>
@@ -108,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer Dropdown */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-t border-white/10 bg-[#005a48]/98 backdrop-blur-xl px-6 py-6 space-y-4">
+        <div className="md:hidden border-t border-white/10 bg-[#075c42]/98 backdrop-blur-xl px-6 py-6 space-y-4">
           <nav className="flex flex-col space-y-3.5 text-xs font-medium tracking-widest uppercase text-white/80 font-sans">
             <a
               href="#scrollytelling"

@@ -2,15 +2,15 @@
 
 @layer base {
   :root {
-    --brand-emerald: #00735C;
-    --brand-emerald-dark: #005a48;
-    --brand-emerald-light: #008f72;
+    --brand-emerald: #097454;
+    --brand-emerald-dark: #075c42;
+    --brand-emerald-light: #0b8f67;
     --brand-gold: #D4AF37;
     --brand-cream: #FDFBF7;
   }
 
   body {
-    background-color: #00735C;
+    background-color: #097454;
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     color: rgba(255, 255, 255, 0.9);
     -webkit-font-smoothing: antialiased;
@@ -35,7 +35,7 @@ canvas {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #005a48;
+  background: #075c42;
 }
 ::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.2);

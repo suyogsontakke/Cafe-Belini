@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
           <span>·</span>
           <span>SCA Standard Grade 1</span>
           <span>·</span>
-          <span>#00735C Emerald</span>
+          <span>#097454 Emerald</span>
         </div>
       </div>
     </footer>

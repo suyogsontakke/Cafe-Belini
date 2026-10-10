@@ -181,7 +181,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#00735C] text-white font-sans antialiased selection:bg-white/20 selection:text-white">
+    <div className="min-h-screen bg-[#097454] text-white font-sans antialiased selection:bg-white/20 selection:text-white">
       {/* Preloader */}
       {!isPreloaderFinished && (
         <Preloader

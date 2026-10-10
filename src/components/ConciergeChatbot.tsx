@@ -218,7 +218,7 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onOpen}
-          className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-4 py-3 bg-[#005a48]/95 hover:bg-[#004d3d] text-white border border-white/20 rounded-full shadow-2xl backdrop-blur-md cursor-pointer transition-colors group"
+          className="fixed bottom-6 right-6 z-40 flex items-center gap-2.5 px-4 py-3 bg-[#075c42]/95 hover:bg-[#054834] text-white border border-white/20 rounded-full shadow-2xl backdrop-blur-md cursor-pointer transition-colors group"
           aria-label="Open Caffè Bellini Concierge FAQ"
         >
           <div className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center text-[#E4A254] group-hover:scale-110 transition-transform">
@@ -249,10 +249,10 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
               animate={{ opacity: 1, y: 0, scale: 1 }}
               exit={{ opacity: 0, y: 30, scale: 0.95 }}
               transition={{ duration: 0.25, ease: 'easeOut' }}
-              className="relative w-full sm:w-[420px] max-h-[85vh] sm:max-h-[640px] h-[80vh] sm:h-[620px] bg-[#005542] border border-white/20 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden text-white font-sans"
+              className="relative w-full sm:w-[420px] max-h-[85vh] sm:max-h-[640px] h-[80vh] sm:h-[620px] bg-[#075c42] border border-white/20 rounded-t-3xl sm:rounded-3xl shadow-2xl flex flex-col overflow-hidden text-white font-sans"
             >
               {/* Header */}
-              <div className="p-4 sm:p-5 border-b border-white/10 bg-[#004737] flex items-center justify-between shrink-0">
+              <div className="p-4 sm:p-5 border-b border-white/10 bg-[#054834] flex items-center justify-between shrink-0">
                 <div className="flex items-center gap-3">
                   <div className="w-9 h-9 rounded-full bg-white/10 border border-white/15 flex items-center justify-center text-[#E4A254]">
                     <Coffee className="w-5 h-5" />
@@ -303,8 +303,8 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
                     <div
                       className={`max-w-[85%] rounded-2xl p-3.5 sm:p-4 leading-relaxed ${
                         msg.sender === 'user'
-                          ? 'bg-white text-[#00735C] font-medium shadow-md rounded-br-xs'
-                          : 'bg-[#004737] text-white/95 border border-white/10 rounded-bl-xs shadow-sm'
+                          ? 'bg-white text-[#097454] font-medium shadow-md rounded-br-xs'
+                          : 'bg-[#054834] text-white/95 border border-white/10 rounded-bl-xs shadow-sm'
                       }`}
                     >
                       <p className="whitespace-pre-line">{msg.text}</p>
@@ -336,7 +336,7 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
                 ))}
 
                 {isTyping && (
-                  <div className="flex items-center gap-1.5 p-3 rounded-2xl bg-[#004737] border border-white/10 max-w-[80px]">
+                  <div className="flex items-center gap-1.5 p-3 rounded-2xl bg-[#054834] border border-white/10 max-w-[80px]">
                     <span className="w-1.5 h-1.5 rounded-full bg-white/70 animate-bounce" />
                     <span className="w-1.5 h-1.5 rounded-full bg-white/70 animate-bounce [animation-delay:0.2s]" />
                     <span className="w-1.5 h-1.5 rounded-full bg-white/70 animate-bounce [animation-delay:0.4s]" />
@@ -349,7 +349,7 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
               {/* Input Bar */}
               <form
                 onSubmit={handleSendMessage}
-                className="p-3 sm:p-4 border-t border-white/10 bg-[#004737] flex items-center gap-2 shrink-0"
+                className="p-3 sm:p-4 border-t border-white/10 bg-[#054834] flex items-center gap-2 shrink-0"
               >
                 <input
                   type="text"
@@ -361,7 +361,7 @@ export const ConciergeChatbot: React.FC<ConciergeChatbotProps> = ({
                 <button
                   type="submit"
                   disabled={!inputValue.trim()}
-                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white disabled:opacity-40 text-[#00735C] flex items-center justify-center shrink-0 hover:bg-white/90 transition-all cursor-pointer shadow-md disabled:cursor-not-allowed"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-white disabled:opacity-40 text-[#097454] flex items-center justify-center shrink-0 hover:bg-white/90 transition-all cursor-pointer shadow-md disabled:cursor-not-allowed"
                   aria-label="Send message"
                 >
                   <Send className="w-4 h-4" />
