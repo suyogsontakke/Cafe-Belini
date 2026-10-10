@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'motion/react';
 import { ArrowDown, UtensilsCrossed, ChevronRight, Sparkles } from 'lucide-react';
 import { drawContainImage, BG_COLOR } from './CoffeeCanvasRenderer.ts';
+import frameColorsData from '../frameColors.json';
 
 interface FoodScrollProps {
   foodFrames: HTMLImageElement[];
@@ -125,12 +126,19 @@ export const FoodScroll: React.FC<FoodScrollProps> = ({
         }
       }
 
+      const activeColor = frameColorsData.foodColors[frameIndex] || BG_COLOR;
+
       if (img && img.complete && img.naturalWidth > 0) {
-        drawContainImage(ctx, img, width, height);
+        drawContainImage(ctx, img, width, height, activeColor);
       } else {
         // Fallback emerald fill
-        ctx.fillStyle = BG_COLOR;
+        ctx.fillStyle = activeColor;
         ctx.fillRect(0, 0, width, height);
+      }
+
+      // Keep sticky background in sync with food frame border
+      if (canvas.parentElement) {
+        canvas.parentElement.style.backgroundColor = activeColor;
       }
     } else {
       // Clear emerald
@@ -172,9 +180,6 @@ export const FoodScroll: React.FC<FoodScrollProps> = ({
           ref={canvasRef}
           className="absolute inset-0 w-full h-full block bg-[#097454]"
         />
-
-        {/* Subtle radial scrim for text legibility */}
-        <div className="absolute inset-0 pointer-events-none bg-radial from-transparent via-[#097454]/20 to-[#097454]/60" />
 
         {/* Stage 1: MATCHA (0% - 28%) - Centered */}
         <div

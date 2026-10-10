@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { motion, useScroll, useMotionValueEvent } from 'motion/react';
 import { ArrowDown, ChevronRight } from 'lucide-react';
 import { drawContainImage, drawProceduralStage, BG_COLOR } from './CoffeeCanvasRenderer.ts';
+import frameColorsData from '../frameColors.json';
 
 interface CoffeeScrollProps {
   customFrames: HTMLImageElement[];
@@ -135,11 +136,18 @@ export const CoffeeScroll: React.FC<CoffeeScrollProps> = ({
         }
       }
 
+      const activeColor = frameColorsData.coffeeColors[frameIndex] || BG_COLOR;
+
       if (img && img.complete && img.naturalWidth > 0) {
-        drawContainImage(ctx, img, width, height);
+        drawContainImage(ctx, img, width, height, activeColor);
       } else {
         // Fallback procedural
         drawProceduralStage(ctx, prog, width, height, time);
+      }
+
+      // Keep sticky background in sync with canvas frame border
+      if (canvas.parentElement) {
+        canvas.parentElement.style.backgroundColor = activeColor;
       }
     } else {
       // Procedural 60fps coffee morphing stage
@@ -182,9 +190,6 @@ export const CoffeeScroll: React.FC<CoffeeScrollProps> = ({
           ref={canvasRef}
           className="absolute inset-0 w-full h-full block bg-[#097454]"
         />
-
-        {/* Subtle vignette scrim to guarantee WCAG text contrast without breaking background blend */}
-        <div className="absolute inset-0 pointer-events-none bg-radial from-transparent via-[#097454]/20 to-[#097454]/60" />
 
         {/* Narrative Stage 1: 0% - 15% (Centered) */}
         <div

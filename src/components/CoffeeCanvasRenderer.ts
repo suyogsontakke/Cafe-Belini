@@ -12,10 +12,11 @@ export function drawContainImage(
   ctx: CanvasRenderingContext2D,
   img: HTMLImageElement | ImageBitmap,
   cw: number,
-  ch: number
+  ch: number,
+  bgColor: string = BG_COLOR
 ) {
-  // Clear with background color #097454
-  ctx.fillStyle = BG_COLOR;
+  // Clear with background color
+  ctx.fillStyle = bgColor;
   ctx.fillRect(0, 0, cw, ch);
 
   const imgWidth = (img as HTMLImageElement).naturalWidth || img.width;
