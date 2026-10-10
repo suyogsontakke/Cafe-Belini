@@ -1,0 +1,8 @@
+{
+  "name": "Cafe Belini — Pure Origin Scrollytelling",
+  "description": "High-end scrollytelling journey through the lifecycle of specialty coffee from cherry to cup, handcrafted for the homies.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
